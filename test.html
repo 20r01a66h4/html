@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="name"]:focus{
+            background-color: rgb(11, 129, 184);
+        }
+        .GROUP:focus{
+            background-color: blue;
+        }
+       #uni:focus{
+        background-color: brown;
+       }
+
+    </style>
+    <script src="https://kit.fontawesome.com/d77eee98c2.js" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: black;">
+   
+   <table align="center" cellpadding="5" cellspacing="4" >
+    <form>
+        <tr style="color: yellow;">
+            <th colspan="2">Registration Form</th>
+        </tr>
+        <tr style="color: yellow;" required>
+            <td> <i class="fa-solid fa-user" style="color: #63E6BE;"></i></td>
+            <td><input type="name" placeholder="anusha"></td>
+        </tr>
+        <tr style="color: yellow;">
+            <td><span></span>FirstName</td>
+            <td><input type="name" placeholder="surname"></td>
+        </tr>
+        <tr style="color: yellow;">
+            <td>Email id</td>
+            <td><input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"></td>
+        </tr>
+        <tr style="color: yellow;">
+            <td>Password</td>
+            <td  ><input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  class="GROUP"></td>
+        </tr>
+        <tr style="color: yellow;">
+            <td>Confirm Password</td>
+            <td ><input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  class="GROUP"></td>
+        </tr>
+        <tr style="color: yellow;">
+            <td>Mobile
+        
+                <select>
+                    <option value="+91">+91</option>
+                    <option value="+92">+92</option>
+                    <option value="+93">+93</option>
+                </select>
+            </td>
+            <td><input type="tel" id="uni"></td>
+        </tr>
+        <tr style="color: yellow;">
+            <td>Gender</td>
+              <td> <input type="radio" name="gender">Female<br>
+                <input type="radio" name="gender">male<br>
+                <input type="radio" name="gender">Others
+            </td>
+        </tr>
+        <tr style="color: yellow;">
+            <!--work experience in number-->
+            <td>Work Experience</td>
+            <td>
+                <input type="number" min="2" max="10">
+            </td>
+        </tr>
+        <tr style="color: yellow;">
+            <td>Skills</td>
+            <td>
+                <input type="checkbox">C<br>
+                <input type="checkbox">C++<br>
+                <input type="checkbox">Java<br>
+                <input type="checkbox">Python<br>
+                <input type="checkbox">Conputer networks<br>
+            </td>
+        </tr>
+        <tr style="color: yellow;">
+            <td>
+            Courses  
+            </td>
+            <td>
+                <datalist id="courses">
+                    <option value="Btech"></option>
+                    <option value="Degree"></option>
+                    <option value="Mtech"></option>
+                    <option value="Mca"></option>
+                </datalist>
+                <input list="courses">
+            </td>
+        </tr>
+        <tr style="color: yellow;">
+            <td>Address</td>
+            <td>
+                <textarea>
+                    
+                </textarea>
+            </td>
+        </tr>
+        <tr style="color: yellow;">
+            <td>Resume</td>
+            <td><input type="file"></td>
+        </tr>
+        <tr style="color: yellow;">
+            <td>DOB</td>
+            <td><input type="date"></td>
+        </tr>
+        <tr style="color: yellow;">
+            <td  >
+                <input type="submit" value="Submit">
+            </td>
+            <td >
+                <input type="reset" value="reset">
+            </td>
+        </tr>
+        
+    </form>
+   </table>
+</body>
+</html>
